@@ -1,6 +1,6 @@
-# -challenge1-data-science-alura-store-latam
+### -challenge1-data-science-alura-store-latam
 
-## Descripcion del Proyecto
+### Descripcion del Proyecto
 
 Este proyecto realiza un analsis completo de datos de ventas de 4 tiendas diferentes, combinando multiples fuentes de datos para extraer insights comerciales e identificar patrones de ventas, compara rendimiento entre tiendas.
 
@@ -8,7 +8,7 @@ Requisitos:
 Dependencias Principales
 
 ==================================================
-📊 VERSIONES INSTALADAS
+# VERSIONES INSTALADAS
 ==================================================
 ✅ Python: 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)]
 
@@ -27,7 +27,7 @@ Dependencias Principales
 ==================================================
 
 
-### Esquema del DataFrame Consolidado
+## Esquema del DataFrame Consolidado
 
 ```python
 <class 'pandas.core.frame.DataFrame'>
@@ -52,9 +52,9 @@ dtypes: float64(4), int64(2), object(7)
 memory usage: 958.4+ KB
 ```
 
-### Analisis
+# Analisis
 
-# KPIs calculados
+## KPIs calculados
 todas_las_tiendas["Cantidad"] = 1
 
 metricas = {
@@ -92,7 +92,7 @@ df_kapis
 
 
 ## Grafica Ingresos Totales
-
+```python
 # Configurar el estilo de seaborn
 sns.set(style="whitegrid")
 
@@ -124,12 +124,13 @@ plt.tight_layout()
 
 # Mostrar el gráfico
 plt.show()
-
+```
+## imagen-grafica
 ![grafica-ingresos totales](image.png)
 
 
 
-### Contribución
+## Contribución
 
 ¡Las contribuciones son bienvenidas! Sigue estos pasos:
 
