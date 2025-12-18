@@ -1,6 +1,6 @@
-### -challenge1-data-science-alura-store-latam
+# -challenge1-data-science-alura-store-latam
 
-### Descripcion del Proyecto
+## Descripcion del Proyecto
 
 Este proyecto realiza un analsis completo de datos de ventas de 4 tiendas diferentes, combinando multiples fuentes de datos para extraer insights comerciales e identificar patrones de ventas, compara rendimiento entre tiendas.
 
@@ -8,7 +8,7 @@ Requisitos:
 Dependencias Principales
 
 ==================================================
-# VERSIONES INSTALADAS
+## VERSIONES INSTALADAS
 ==================================================
 ✅ Python: 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)]
 
@@ -144,7 +144,7 @@ plt.show()
 
     Abre un Pull Request
 
-📄 Licencia
+## 📄 Licencia
 
 Distribuido bajo la licencia MIT. Ver LICENSE para más información.
 https://github.com/LejImkoaj/challenge1-data-science-alura-store-latam
