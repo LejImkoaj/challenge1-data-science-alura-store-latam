@@ -55,6 +55,7 @@ memory usage: 958.4+ KB
 # Analisis
 
 ## KPIs calculados
+```python
 todas_las_tiendas["Cantidad"] = 1
 
 metricas = {
@@ -89,6 +90,7 @@ metricas = {
 
 df_kapis = pd.DataFrame(metricas)
 df_kapis
+```
 
 
 ## Grafica Ingresos Totales
