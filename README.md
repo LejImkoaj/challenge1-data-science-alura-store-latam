@@ -4,6 +4,22 @@
 
 Este proyecto realiza un analsis completo de datos de ventas de 4 tiendas diferentes, combinando multiples fuentes de datos para extraer insights comerciales e identificar patrones de ventas, compara rendimiento entre tiendas.
 
+Requisitos:
+Dependencias Principales
+
+==================================================
+📊 VERSIONES INSTALADAS
+==================================================
+✅ Python: 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)]
+✅ Pandas: 2.3.3
+✅ Matplotlib: 3.10.3
+✅ NumPy: 1.26.4
+✅ Seaborn: 0.13.2
+✅ IPython (Jupyter): 9.2.0
+✅ Google Colab: Disponible
+   Entorno: Colab
+==================================================
+
 
 ### Esquema del DataFrame Consolidado
 
@@ -68,23 +84,6 @@ df_kapis = pd.DataFrame(metricas)
 df_kapis
 
 
-
-Requisitos:
-Dependencias Principales
-
-==================================================
-📊 VERSIONES INSTALADAS
-==================================================
-✅ Python: 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)]
-✅ Pandas: 2.3.3
-✅ NumPy: 1.26.4
-✅ Seaborn: 0.13.2
-✅ IPython (Jupyter): 9.2.0
-✅ Google Colab: Disponible
-   Entorno: Colab
-
-
-
 # Grafica Ingresos Totales
 
 # Configurar el estilo de seaborn
@@ -123,7 +122,7 @@ plt.show()
 
 
 
-🤝 Contribución
+###Contribución
 
 ¡Las contribuciones son bienvenidas! Sigue estos pasos:
 
