@@ -29,19 +29,60 @@ Data columns (total 13 columns):
 dtypes: float64(4), int64(2), object(7)
 memory usage: 958.4+ KB
 
+## Analisis
+
+# KPIs calculados
+todas_las_tiendas["Cantidad"] = 1
+
+metricas = {
+    # Ventas Basicas
+    'ventas_totales': todas_las_tiendas.groupby('Tiendas')['Precio'].sum(),
+    'numero_transacciones': todas_las_tiendas.groupby('Tiendas').size(),
+    
+    # Metricas de Precio
+    'precio_promedio': todas_las_tiendas.groupby('Tiendas')['Precio'].mean().round(),
+    'precio_mediano': todas_las_tiendas.groupby('Tiendas')['Precio'].median(),
+    'precio_maximo': todas_las_tiendas.groupby('Tiendas')['Precio'].max(),
+    'precio_minimo': todas_las_tiendas.groupby('Tiendas')['Precio'].min(),
+    
+    # Logistica
+    'costo_envio_total': todas_las_tiendas.groupby('Tiendas')['Costo de envío'].sum(),
+    'costo_envio_promedio': todas_las_tiendas.groupby('Tiendas')['Costo de envío'].mean().round(),
+    
+    # Metodo de pago     
+    'metodo_pago_preferido': todas_las_tiendas.groupby('Tiendas')['Método de pago'].apply(
+    lambda x: x.mode().iloc[0] if not x.mode().empty else 'Sin Datos'),
+    
+    # Producto Preferido
+    'categoria_preferida': todas_las_tiendas.groupby('Tiendas')['Categoría del Producto'].apply(lambda x: x.mode().iloc[0] if not x.mode().empty else 'Sin Datos'),
+    
+    # Categoria mas Vendida
+    'producto_top': todas_las_tiendas.groupby('Tiendas')['Producto'].apply(lambda x: x.mode()[0] if not x.mode().empty else 'Sin datos'),
+    
+    # Calificacion Promedio
+    'calificacion_promedio': todas_las_tiendas.groupby('Tiendas')['Calificación'].mean().round(2)
+    
+}
+
+df_kapis = pd.DataFrame(metricas)
+df_kapis
+
+
+
 Requisitos:
 Dependencias Principales
 
-python>=3.12.1
-pandas>=1.3.0
-numpy>=1.21.0
-seaborn>=0.11.0
-matplotlib>=3.4.0
-google colab
-jupyter>=1.0.0  # Para notebooks
+==================================================
+📊 VERSIONES INSTALADAS
+==================================================
+✅ Python: 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)]
+✅ Pandas: 2.3.3
+✅ NumPy: 1.26.4
+✅ Seaborn: 0.13.2
+✅ IPython (Jupyter): 9.2.0
+✅ Google Colab: Disponible
+   Entorno: Colab
 
-Ejemplo de Código para Visualización
-python
 
 
 # Grafica Ingresos Totales
@@ -78,6 +119,9 @@ plt.tight_layout()
 # Mostrar el gráfico
 plt.show()
 
+![grafica-ingresos totales](image.png)
+
+
 
 🤝 Contribución
 
@@ -96,8 +140,8 @@ plt.show()
 📄 Licencia
 
 Distribuido bajo la licencia MIT. Ver LICENSE para más información.
-📧 Contacto
+https://github.com/LejImkoaj/challenge1-data-science-alura-store-latam
 
-Tu Nombre - @tuusuario - email@ejemplo.com
+Daniel - @LejImkoaj - dani05sm@gmail.com
 
-Enlace del proyecto: https://github.com/tu-usuario/analisis-ventas-tiendas
+Enlace del proyecto: https://github.com/LejImkoaj/challenge1-data-science-alura-store-latam
