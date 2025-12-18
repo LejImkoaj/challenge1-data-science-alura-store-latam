@@ -50,6 +50,7 @@ Data columns (total 13 columns):
  12  Tiendas                 9435 non-null   object 
 dtypes: float64(4), int64(2), object(7)
 memory usage: 958.4+ KB
+```
 
 ### Analisis
 
@@ -90,7 +91,7 @@ df_kapis = pd.DataFrame(metricas)
 df_kapis
 
 
-# Grafica Ingresos Totales
+## Grafica Ingresos Totales
 
 # Configurar el estilo de seaborn
 sns.set(style="whitegrid")
