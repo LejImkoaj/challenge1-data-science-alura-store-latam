@@ -11,11 +11,17 @@ Dependencias Principales
 📊 VERSIONES INSTALADAS
 ==================================================
 ✅ Python: 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)]
+
 ✅ Pandas: 2.3.3
+
 ✅ Matplotlib: 3.10.3
+
 ✅ NumPy: 1.26.4
+
 ✅ Seaborn: 0.13.2
+
 ✅ IPython (Jupyter): 9.2.0
+
 ✅ Google Colab: Disponible
    Entorno: Colab
 ==================================================
@@ -45,7 +51,7 @@ Data columns (total 13 columns):
 dtypes: float64(4), int64(2), object(7)
 memory usage: 958.4+ KB
 
-## Analisis
+### Analisis
 
 # KPIs calculados
 todas_las_tiendas["Cantidad"] = 1
@@ -122,7 +128,7 @@ plt.show()
 
 
 
-###Contribución
+### Contribución
 
 ¡Las contribuciones son bienvenidas! Sigue estos pasos:
 
